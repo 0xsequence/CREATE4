@@ -24,6 +24,17 @@ jobs:
       - name: Install Foundry
         uses: foundry-rs/foundry-toolchain@v1
 
+      - name: Setup Node.js for CREATE4 CLI
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: tools/CREATE4-cli/package-lock.json
+
+      - name: Install CREATE4 CLI dependencies
+        working-directory: tools/CREATE4-cli
+        run: npm ci
+
       - name: Show Forge version
         run: forge --version
 
