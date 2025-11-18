@@ -1,0 +1,35 @@
+{
+  "name": "@0xsequence/CREATE4",
+  "version": "1.0.0",
+  "type": "commonjs",
+  "main": "src/index.js",
+  "bin": {
+    "CREATE4-plan": "./bin/CREATE4-plan.js"
+  },
+  "scripts": {
+    "lint": "eslint --max-warnings=0 .",
+    "build": "npm run lint && npm run test && npm run package-check",
+    "package-check": "npm pack --dry-run",
+    "test": "node test/smoke-tests.js"
+  },
+  "keywords": [
+    "create4",
+    "create3",
+    "ethereum",
+    "evm",
+    "sequence",
+    "deployer",
+    "smart-contracts"
+  ],
+  "author": "Sequence Platforms Inc.",
+  "license": "MIT",
+  "description": "CLI and JavaScript helpers for the CREATE4 universal deployer.",
+  "dependencies": {
+    "js-sha3": "^0.9.3"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.12.0",
+    "eslint": "^9.12.0",
+    "globals": "^15.9.0"
+  }
+}

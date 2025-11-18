@@ -1,0 +1,22 @@
+{
+  "description": "Sample plan spec used by deterministic tests",
+  "salt": "0x1111111111111111111111111111111111111111111111111111111111111111",
+  "chains": [
+    {
+      "chainId": 1,
+      "label": "alpha",
+      "initCode": "0x600a600c600039600a6000f3600160005260206000f3"
+    },
+    {
+      "chainId": 10,
+      "label": "beta",
+      "initCode": "0x600a600c600039600a6000f3600260005260206000f3"
+    },
+    {
+      "chainId": 25,
+      "label": "gamma",
+      "initCode": "0x600a600c600039600a6000f3600360005260206000f3"
+    }
+  ],
+  "fallbackInitCode": "0x600a600c600039600a6000f360ff60005260206000f3"
+}
