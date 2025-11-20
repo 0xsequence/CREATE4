@@ -24,6 +24,9 @@
   "author": "Sequence Platforms Inc.",
   "license": "MIT",
   "description": "CLI and JavaScript helpers for the CREATE4 universal deployer.",
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "js-sha3": "^0.9.3"
   },
