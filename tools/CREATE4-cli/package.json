@@ -1,5 +1,5 @@
 {
-  "name": "@0xsequence/CREATE4",
+  "name": "@0xsequence/create4",
   "version": "1.0.0",
   "type": "commonjs",
   "main": "src/index.js",
