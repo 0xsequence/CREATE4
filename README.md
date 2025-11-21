@@ -10,6 +10,17 @@ The catch is that existing patterns require all deployments to share the exact s
 
 CREATE4 drops that constraint. It uses CREATE3 to decouple the address from the bytecode, and a factory that re-couples the address to a “deployment plan”: a Merkle tree of per-chain init codes plus a global fallback. The plan is committed to on-chain, and the same plan can be deployed consistently from any chain.
 
+### Demo
+
+The following contract was deployed using CREATE4 as an asymmetric contract; it is an ERC721 on Ethereum, an ERC20 on Polygon, and a simpler contract on every other network.
+
+| Variant   | Address                                      | Network     | Explorer Link                                                    |
+|-----------|----------------------------------------------|-------------|------------------------------------------------------------------|
+| ERC721    | 0x510702321CfC9C7EdCcA4323eD222ce268CE80D5  | Ethereum    | [Etherscan](https://etherscan.io/address/0x510702321CfC9C7EdCcA4323eD222ce268CE80D5) |
+| ERC20     | 0x510702321CfC9C7EdCcA4323eD222ce268CE80D5  | Polygon     | [Polygonscan](https://polygonscan.com/address/0x510702321CfC9C7EdCcA4323eD222ce268CE80D5) |
+| Fallback  | 0x510702321CfC9C7EdCcA4323eD222ce268CE80D5  | Optimism    | [Optimism Explorer](https://optimistic.etherscan.io/address/0x510702321CfC9C7EdCcA4323eD222ce268CE80D5) |
+| Fallback  | 0x510702321CfC9C7EdCcA4323eD222ce268CE80D5  | Arbitrum    | [Arbiscan](https://arbiscan.io/address/0x510702321CfC9C7EdCcA4323eD222ce268CE80D5) |
+
 ### Deployed factory
 
 | Chain           | Network Type | Contract                                   | Explorer                                                                 |
