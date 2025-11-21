@@ -10,6 +10,67 @@ The catch is that existing patterns require all deployments to share the exact s
 
 CREATE4 drops that constraint. It uses CREATE3 to decouple the address from the bytecode, and a factory that re-couples the address to a “deployment plan”: a Merkle tree of per-chain init codes plus a global fallback. The plan is committed to on-chain, and the same plan can be deployed consistently from any chain.
 
+### Deployed factory
+
+| Chain           | Network Type | Contract                                   | Explorer                                                                 |
+|-----------------|-------------|---------------------------------------------|--------------------------------------------------------------------------|
+| Ethereum Mainnet| Mainnet     | `0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166` | [Etherscan](https://etherscan.io/address/0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166) |
+| Polygon PoS     | Mainnet     | `0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166` | [Polygonscan](https://polygonscan.com/address/0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166) |
+| Arbitrum One    | Mainnet     | `0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166` | [Arbiscan](https://arbiscan.io/address/0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166) |
+| Optimism        | Mainnet     | `0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166` | [OP Mainnet Explorer](https://optimistic.etherscan.io/address/0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166) |
+| Base            | Mainnet     | `0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166` | [BaseScan](https://basescan.org/address/0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166) |
+
+<details>
+  <summary>Other networks</summary>
+
+  #### Mainnets
+
+  | Chain              | Network Type | Contract                                   | Explorer                                                                 |
+  |--------------------|-------------|---------------------------------------------|--------------------------------------------------------------------------|
+  | BNB Smart Chain    | Mainnet     | `0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166` | [BscScan](https://bscscan.com/address/0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166) |
+  | Gnosis Chain       | Mainnet     | `0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166` | [GnosisScan](https://gnosisscan.io/address/0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166) |
+  | Polygon zkEVM      | Mainnet     | `0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166` | [OKLink Polygon zkEVM](https://www.oklink.com/polygon-zkevm/address/0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166) |
+  | Moonbeam           | Mainnet     | `0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166` | [Moonscan](https://moonscan.io/address/0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166) |
+  | Soneium            | Mainnet     | `0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166` | [Soneium Blockscout](https://soneium.blockscout.com/address/0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166) |
+  | B3                 | Mainnet     | `0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166` | [B3 Explorer](https://explorer.b3.fun/address/0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166) |
+  | Monad              | Mainnet     | `0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166` | [Monad MonVision](https://mainnet-beta.monvision.io/address/0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166) |
+  | Immutable zkEVM    | Mainnet     | `0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166` | [Immutable Explorer](https://explorer.immutable.com/address/0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166) |
+  | HOMEVERSE          | Mainnet     | `0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166` | [HOMEVERSE Explorer](https://explorer.oasys.homeverse.games/address/0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166) |
+  | ApeChain           | Mainnet     | `0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166` | [Apescan](https://apescan.io/address/0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166) |
+  | Arbitrum Nova      | Mainnet     | `0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166` | [Nova Arbiscan](https://nova.arbiscan.io/address/0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166) |
+  | Etherlink          | Mainnet     | `0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166` | [Etherlink Explorer](https://explorer.etherlink.com/address/0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166) |
+  | Avalanche C-Chain  | Mainnet     | `0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166` | [Snowtrace](https://snowtrace.io/address/0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166) |
+  | Somnia             | Mainnet     | `0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166` | [Somnia Explorer](https://explorer.somnia.network/address/0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166) |
+  | Blast              | Mainnet     | `0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166` | [Blastscan](https://blastscan.io/address/0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166) |
+  | Xai                | Mainnet     | `0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166` | [Xaiscan](https://xaiscan.io/address/0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166) |
+  | SEI EVM            | Mainnet     | `0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166` | [Seiscan](https://seiscan.io/address/0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166) |
+  | Katana             | Mainnet     | `0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166` | [KatanaScan](https://katanascan.com/address/0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166) |
+
+  #### Testnets
+
+  | Chain                 | Network Type | Contract                                   | Explorer                                                                 |
+  |-----------------------|-------------|---------------------------------------------|--------------------------------------------------------------------------|
+  | B3 Sepolia            | Testnet     | `0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166` | [B3 Sepolia Explorer](https://sepolia.explorer.b3.fun/address/0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166) |
+  | Monad Testnet         | Testnet     | `0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166` | [MonadScan Testnet](https://testnet.monadscan.com/address/0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166) |
+  | Immutable zkEVM Testnet | Testnet   | `0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166` | [Immutable Testnet Explorer](https://explorer.testnet.immutable.com/address/0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166) |
+  | HOMEVERSE Testnet     | Testnet     | `0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166` | [HOMEVERSE Testnet Explorer](https://explorer.testnet.oasys.homeverse.games/address/0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166) |
+  | Avalanche Fuji        | Testnet     | `0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166` | [Snowtrace Fuji](https://testnet.snowtrace.io/address/0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166) |
+  | Somnia Testnet        | Testnet     | `0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166` | [Somnia Shannon Explorer](https://shannon-explorer.somnia.network/address/0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166) |
+  | Polygon Amoy          | Testnet     | `0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166` | [Amoy Polygonscan](https://amoy.polygonscan.com/address/0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166) |
+  | Base Sepolia          | Testnet     | `0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166` | [Base Sepolia Scan](https://sepolia.basescan.org/address/0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166) |
+  | Etherlink Testnet     | Testnet     | `0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166` | [Etherlink Testnet Explorer](https://testnet.explorer.etherlink.com/address/0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166) |
+  | Arbitrum Sepolia      | Testnet     | `0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166` | [Arbitrum Sepolia Arbiscan](https://sepolia.arbiscan.io/address/0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166) |
+  | Ethereum Sepolia      | Testnet     | `0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166` | [Sepolia Etherscan](https://sepolia.etherscan.io/address/0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166) |
+  | Optimism Sepolia      | Testnet     | `0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166` | [OP Sepolia Explorer](https://sepolia-optimism.etherscan.io/address/0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166) |
+  | Toy Testnet           | Testnet     | `0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166` | [Toy Chain Testnet Explorer](https://toy-chain-testnet.explorer.caldera.xyz/address/0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166) |
+  | Blast Sepolia         | Testnet     | `0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166` | [Blastscan Sepolia](https://sepolia.blastscan.io/address/0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166) |
+  | Xai Testnet v2        | Testnet     | `0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166` | [Xaiscan Sepolia](https://sepolia.xaiscan.io/address/0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166) |
+  | Incentiv Testnet v2   | Testnet     | `0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166` | [Incentiv Testnet Explorer](https://explorer-testnet.incentiv.io/address/0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166) |
+  | SEI Testnet           | Testnet     | `0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166` | [Seiscan Testnet](https://testnet.seiscan.io/address/0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166) |
+  | Arc Testnet           | Testnet     | `0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166` | [ArcScan Testnet](https://testnet.arcscan.app/address/0xC4C4C4Ae7EA494fdb246991b70c8E40f471c9166) |
+
+</details>
+
 ### Deployment address
 
 The deployment plan root is computed as a Merkle tree where:
