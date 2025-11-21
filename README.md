@@ -14,12 +14,12 @@ CREATE4 drops that constraint. It uses CREATE3 to decouple the address from the 
 
 The following contract was deployed using CREATE4 as an asymmetric contract; it is an ERC721 on Ethereum, an ERC20 on Polygon, and a simpler contract on every other network.
 
-| Variant   | Address                                      | Network     | Explorer Link                                                    |
-|-----------|----------------------------------------------|-------------|------------------------------------------------------------------|
-| ERC721    | 0x510702321CfC9C7EdCcA4323eD222ce268CE80D5  | Ethereum    | [Etherscan](https://etherscan.io/address/0x510702321CfC9C7EdCcA4323eD222ce268CE80D5) |
-| ERC20     | 0x510702321CfC9C7EdCcA4323eD222ce268CE80D5  | Polygon     | [Polygonscan](https://polygonscan.com/address/0x510702321CfC9C7EdCcA4323eD222ce268CE80D5) |
-| Fallback  | 0x510702321CfC9C7EdCcA4323eD222ce268CE80D5  | Optimism    | [Optimism Explorer](https://optimistic.etherscan.io/address/0x510702321CfC9C7EdCcA4323eD222ce268CE80D5) |
-| Fallback  | 0x510702321CfC9C7EdCcA4323eD222ce268CE80D5  | Arbitrum    | [Arbiscan](https://arbiscan.io/address/0x510702321CfC9C7EdCcA4323eD222ce268CE80D5) |
+| Chain        | Variant   | Contract                                    | Explorer Link                                                                 |
+|--------------|-----------|---------------------------------------------|-------------------------------------------------------------------------------|
+| Ethereum     | ERC721    | `0x510702321CfC9C7EdCcA4323eD222ce268CE80D5` | [Etherscan](https://etherscan.io/address/0x510702321CfC9C7EdCcA4323eD222ce268CE80D5)      |
+| Polygon      | ERC20     | `0x510702321CfC9C7EdCcA4323eD222ce268CE80D5` | [Polygonscan](https://polygonscan.com/address/0x510702321CfC9C7EdCcA4323eD222ce268CE80D5) |
+| Optimism     | Fallback  | `0x510702321CfC9C7EdCcA4323eD222ce268CE80D5` | [Optimism Explorer](https://optimistic.etherscan.io/address/0x510702321CfC9C7EdCcA4323eD222ce268CE80D5) |
+| Arbitrum     | Fallback  | `0x510702321CfC9C7EdCcA4323eD222ce268CE80D5` | [Arbiscan](https://arbiscan.io/address/0x510702321CfC9C7EdCcA4323eD222ce268CE80D5)          |
 
 ### Deployed factory
 
