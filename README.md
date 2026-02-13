@@ -301,7 +301,7 @@ console.log({ canFallbackOn120, gapSummary });
 ```
 MIT License
 
-Copyright (c) 2025 Sequence Platforms Inc.
+Copyright (c) 2025 Sequence Platforms ULC
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
